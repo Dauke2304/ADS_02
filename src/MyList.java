@@ -1,7 +1,8 @@
-public interface MyList<T> extends Iterable<T> {
+import Exceptions.ElementNotFoundException;
+
+public interface MyList<T extends Comparable<T>> extends Iterable<T> {
     void add(T item);
     void set(int index, T item);
-    void add(int index, T item);
     void addFirst(T item);
     void addLast(T item);
     T get(int index);
@@ -11,8 +12,8 @@ public interface MyList<T> extends Iterable<T> {
     void removeFirst();
     void removeLast();
     void sort();
-    int index0f(Object object);
-    int LastIndex0f(Object object);
+    int indexOf(Object object) throws ElementNotFoundException;
+    int LastIndexOf(Object object);
     boolean exists(Object object);
     public Object[] toArray();
     void clear();
