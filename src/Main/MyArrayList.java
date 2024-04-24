@@ -1,4 +1,6 @@
-import Exceptions.ElementNotFoundException;
+package Main;
+
+import Main.Exceptions.ElementNotFoundException;
 
 public class MyArrayList<T> implements MyList<T> {
     private T[] arr;

@@ -1,6 +1,8 @@
-import Exceptions.ElementNotFoundException;
+package Main;
 
-public interface MyList<T> extends Iterable<T> {
+import Main.Exceptions.ElementNotFoundException;
+
+public interface MyList<T> extends java.lang.Iterable<T> {
     void add(T item);
     void set(int index, T item);
     void addFirst(T item);
