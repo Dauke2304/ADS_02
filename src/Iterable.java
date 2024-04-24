@@ -1,2 +1,2 @@
-public interface Iterable<T extends Comparable<T>>  {
+public interface Iterable<T>  {
 }

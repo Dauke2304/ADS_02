@@ -1,6 +1,6 @@
 import Exceptions.ElementNotFoundException;
 
-public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
+public class MyArrayList<T> implements MyList<T> {
     private T[] arr;
     private int size;
 
@@ -86,11 +86,7 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
     public void sort() {
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
-                if (arr[j].compareTo(arr[j + 1]) > 0) {
-                    T temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+
             }
         }
     }
@@ -105,8 +101,9 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
                 }
             }
         }
-        else 
-            throw new ElementNotFoundException("Element not found in the list");
+        else
+            new ElementNotFoundException("Element not found in the list");
+        return 0;
     }
 
     @Override
