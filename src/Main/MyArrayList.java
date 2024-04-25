@@ -39,6 +39,11 @@ public class MyArrayList<T> implements MyList<T> {
         if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException("index not correct");
     }
+    private void checkFound(Object object) throws ElementNotFoundException {
+        if(!exists(object)){
+            throw new ElementNotFoundException("Element not found");
+        }
+    }
 
     @Override
     public void addFirst(T item) {
@@ -103,8 +108,7 @@ public class MyArrayList<T> implements MyList<T> {
                 }
             }
         }
-        else
-            new ElementNotFoundException("Element not found in the list");
+        else checkFound(object);
         return 0;
     }
 

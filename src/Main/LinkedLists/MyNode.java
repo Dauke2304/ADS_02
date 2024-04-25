@@ -1,11 +1,11 @@
 package Main.LinkedLists;
 
 public class MyNode<T> {
-    T data;
+    T item;
     MyNode<T> next;
 
-    public MyNode(T data) {
-        this.data = data;
+    public MyNode(T item) {
+        this.item = item;
         next = null;
     }
 }
