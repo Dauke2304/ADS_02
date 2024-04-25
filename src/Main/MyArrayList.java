@@ -2,7 +2,7 @@ package Main;
 
 import Main.Exceptions.ElementNotFoundException;
 
-public class MyArrayList<T> implements MyList<T> {
+public class MyArrayList<T extends Comparable<T>> implements MyList<T>{
     private T[] arr;
     private int size;
 
@@ -16,6 +16,14 @@ public class MyArrayList<T> implements MyList<T> {
             newArr[i] = arr[i];
         }
         arr = newArr;
+    }
+    public void PrintArray(){
+        System.out.print("{");
+        for (int i = 0;i<size-1;i++){
+            System.out.print(arr[i]+", ");
+        }
+        System.out.print(arr[size-1]);
+        System.out.println("}");
     }
 
     @Override
@@ -93,7 +101,11 @@ public class MyArrayList<T> implements MyList<T> {
     public void sort() {
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
-
+                if (arr[j].compareTo(arr[j + 1]) > 0) {
+                    T temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
             }
         }
     }
@@ -145,10 +157,12 @@ public class MyArrayList<T> implements MyList<T> {
             newArray[i] = arr[i];
         }
         return newArray;
+        //or just return arr, this method mostly for LinkedLists to reform them to simple array.
     }
 
     @Override
     public void clear() {
+        arr=null;
         size=0;
     }
 

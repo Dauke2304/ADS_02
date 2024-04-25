@@ -4,7 +4,7 @@ import Main.MyList;
 import Main.LinkedLists.MyNode;
 
 
-public class MyLinkedList<T> implements MyList<T> {
+public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
     private MyNode<T> head;
     private int size;
 
@@ -113,7 +113,25 @@ public class MyLinkedList<T> implements MyList<T> {
 
     @Override
     public void sort() {
+        boolean swapped;
+        MyNode<T> current;
+        MyNode<T> next = null;
 
+        do {
+            swapped = false;
+            current = head;
+
+            while (current.getNext() != next) {
+                if (current.getData().compareTo(current.getNext().getData()) > 0) {
+                    T temp = current.getData();
+                    current.setData(current.getNext().getData());
+                    current.getNext().setData(temp);
+                    swapped = true;
+                }
+                current = current.getNext();
+            }
+            next = current;
+        } while (swapped);
     }
 
     @Override
@@ -187,6 +205,16 @@ public class MyLinkedList<T> implements MyList<T> {
     public int size() {
         return size ;
     }
-
-
+    private void PrintArray(Object[] arr){
+        System.out.print("{");
+        for (int i = 0;i<size-1;i++){
+            System.out.print(arr[i]+", ");
+        }
+        System.out.print(arr[size-1]);
+        System.out.println("}");
+    }
+    public void PrintLinkedList(){
+        Object[] arr = toArray();
+        PrintArray(arr);
+    }
 }
