@@ -114,7 +114,15 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public int LastIndexOf(Object object) {
-        return size-1;
+        boolean check =exists(object);
+        if(check){
+            for (int i = size-1; i >0; i--) {
+                if (arr[i].equals(object)) {
+                    return i;
+                }
+            }
+        }
+        return 0;
     }
 
     @Override

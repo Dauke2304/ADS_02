@@ -1,11 +1,26 @@
 package Main.LinkedLists;
 
 public class MyNode<T> {
-    T item;
+    T data;
     MyNode<T> next;
 
-    public MyNode(T item) {
-        this.item = item;
+    public MyNode(T data) {
+        this.data= data;
         next = null;
+    }
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public MyNode<T> getNext() {
+        return next;
+    }
+
+    public void setNext(MyNode<T> next) {
+        this.next = next;
     }
 }
