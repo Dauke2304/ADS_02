@@ -34,6 +34,21 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
     }
 
     @Override
+    public void add(T item, int index) {
+        checkIndex(index);
+        MyNode<T> newNode = new MyNode<>(item);
+        if (index == 0) {
+            newNode.setNext(head);
+            head = newNode;
+        } else {
+            MyNode<T> prevNode = getNode(index - 1);
+            newNode.setNext(prevNode.getNext());
+            prevNode.setNext(newNode);
+        }
+        size++;
+    }
+
+    @Override
     public void set(int index, T item) {
         checkIndex(index);
 

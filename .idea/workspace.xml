@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc7236e-aa94-40c4-adb7-aab296ba469d" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/LogicalDS/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LogicalDS/MyStack.java" afterDir="false" />
+    <list default="true" id="dfc7236e-aa94-40c4-adb7-aab296ba469d" name="Changes" comment="Stack">
+      <change beforePath="$PROJECT_DIR$/src/Main/LinkedLists/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LinkedLists/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dauke2304"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ad0f620e-06ad-4d06-8707-98c0eb02e0f2" />
+        <option name="url" value="https://github.com/Dauke2304/ADS_02.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -61,7 +76,7 @@
       <updated>1713935520589</updated>
       <workItem from="1713935521696" duration="9452000" />
       <workItem from="1714017979136" duration="1193000" />
-      <workItem from="1714055546996" duration="5209000" />
+      <workItem from="1714055546996" duration="5651000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -143,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714059976703</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Stack">
+      <option name="closed" value="true" />
+      <created>1714066662422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714066662422</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +174,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stack" />
   </component>
 </project>
