@@ -7,7 +7,6 @@
     <list default="true" id="dfc7236e-aa94-40c4-adb7-aab296ba469d" name="Changes" comment="Stack">
       <change beforePath="$PROJECT_DIR$/src/Main/LinkedLists/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/LinkedLists/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <updated>1713935520589</updated>
       <workItem from="1713935521696" duration="9452000" />
       <workItem from="1714017979136" duration="1193000" />
-      <workItem from="1714055546996" duration="5651000" />
+      <workItem from="1714055546996" duration="5977000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -166,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714066662422</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Stack">
+      <option name="closed" value="true" />
+      <created>1714067231140</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714067231140</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

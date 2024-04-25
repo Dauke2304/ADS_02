@@ -67,12 +67,12 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T>{
 
     @Override
     public void addFirst(T item) {
-        set(0,item);
+        add(item,0);
     }
 
     @Override
     public void addLast(T item) {
-        set(arr.length-1,item);
+        add(item,size-1);
     }
 
     @Override
