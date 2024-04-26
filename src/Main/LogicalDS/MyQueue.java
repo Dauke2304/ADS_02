@@ -8,14 +8,14 @@ public class MyQueue<T extends Comparable<T>> {
     public MyQueue(){
         myQueue = new MyLinkedList<>();
     }
-    public T push(T item){
+    public T enqueue(T item){
         myQueue.addLast(item);
         return item;
     }
     public boolean isEmpty() {
         return myQueue.size() == 0;
     }
-    public T pop() {
+    public T dequeue() {
         if (isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
